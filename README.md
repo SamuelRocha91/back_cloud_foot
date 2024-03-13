@@ -1,25 +1,23 @@
-# back_cloud_foot
-# README
+# Cloud Fire Football
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Bem-vindo ao repositório do projeto Cloud Fire Football! 🚀
 
-Things you may want to cover:
+**Status do Projeto:** Em Andamento
 
-* Ruby version
+Este repositório representa a parte backend da aplicação Cloud Fire Football, desenvolvida utilizando Ruby on Rails.
 
-* System dependencies
+## Visão Geral
 
-* Configuration
+O Cloud Fire Football é um projeto empolgante que visa criar uma plataforma onde os usuários podem se cadastrar, formar grupos e participar de competições personalizadas com base na previsão de resultados da liga de futebol brasileira. A aplicação oferece um ambiente divertido e competitivo para os usuários demonstrarem sua precisão na previsão dos resultados das partidas, rodada a rodada.
 
-* Database creation
+## Design e Esquema do Banco de Dados
 
-* Database initialization
+Confira o design preliminar e o esquema do banco de dados no [Figma](https://www.figma.com/file/63w3FPeEjgXDTvYx4GMDDt/Samuel-Rocha's-team-library?type=design&node-id=0-1&mode=design&t=qgrGvN4CaKOYxPNE-0). Isso oferece uma prévia dos aspectos visuais e da estrutura do banco de dados com os quais estamos trabalhando.
 
-* How to run the test suite
+## Funcionalidades
 
-* Services (job queues, cache servers, search engines, etc.)
+- Registro de Usuários: Faça seu cadastro e crie sua conta.
+- Formação de Grupos: Forme ou participe de grupos com amigos e entusiastas do futebol.
+- Competições Personalizadas: Personalize competições de acordo com suas preferências, incluindo critérios de pontuação, formato de liga ou copa e número de rodadas.
 
-* Deployment instructions
-
-* ...
+Sinta-se à vontade para contribuir, fornecer feedback ou juntar-se a nós nesta empolgante jornada para dar vida ao Cloud Fire Football! Vamos tornar a previsão de resultados de futebol uma experiência emocionante para todos. ⚽🔥
