@@ -9,6 +9,8 @@ Bundler.require(*Rails.groups)
 module CloudFire
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
+    config.api_only = true
+
     config.load_defaults 7.1
 
     # Please, add to the `ignore` list any other `lib` subdirectories that do
