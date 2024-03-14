@@ -18,7 +18,6 @@ RSpec.describe "/users", type: :request do
   # adjust the attributes here as well.
   let(:valid_attributes) {
         { first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, email: Faker::Internet.email, password_digest: Faker::Internet.password(min_length: 6)}
-
   }
 
   let(:invalid_attributes) {
@@ -80,6 +79,15 @@ RSpec.describe "/users", type: :request do
              params: { user: invalid_attributes }, headers: valid_headers, as: :json
         expect(response).to have_http_status(:unprocessable_entity)
         expect(response.content_type).to match(a_string_including("application/json"))
+      end
+
+      it "is not valid with a email repeated" do
+        User.create!(first_name: "John", last_name: "Doe", email: "john.doe@example.com", password_digest: "password123")
+        user = User.new(first_name: "Johny", last_name: "Doeng", email: "john.doe@example.com", password_digest: "password12dsds3")
+        post users_url,
+             params: { user: user }, headers: valid_headers, as: :json
+        expect(response).to have_http_status(:unprocessable_entity)
+        expect(response.body).to include("has already been taken")
       end
     end
   end
